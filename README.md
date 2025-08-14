@@ -45,3 +45,29 @@ For perfect horizontal and vertical centering:
   justify-content: center; /* Horizontal alignment */
   align-items: center;     /* Vertical alignment */
 }
+
+---
+
+## Task 3: Flex Axes and Properties
+
+### Question: What is the difference between the main axis and the cross axis in Flexbox?
+
+In Flexbox, layout alignment is based on two axes:
+
+- **Main axis**: The primary axis along which flex items are laid out.  
+  - Its direction is determined by the flex-direction property.  
+  - For example:  
+    - flex-direction: row` → main axis is horizontal  
+    - flex-direction: column` → main axis is vertical  
+
+- **Cross axis**: The axis perpendicular to the main axis.  
+  - Used for alignment perpendicular to the main axis.  
+  - For example:  
+    - If main axis is horizontal → cross axis is vertical  
+    - If main axis is vertical → cross axis is horizontal  
+
+**Key point:**  
+- justify-content aligns items along the **main axis**  
+- align-items aligns items along the **cross axis**  
+
+---
