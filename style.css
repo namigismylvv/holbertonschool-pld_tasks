@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 /* Task 1 */
-.container-float{
+/* Float based */
+/* .container-float{
     border: 2px solid #333;
 }
 .box{
@@ -12,4 +13,13 @@
     height: 100px;
     float: left;
 
+} */
+/* Flexbox based */
+.container-flexbox{
+    display: flex;
+    border: 2px solid #333;
+}
+.box{
+    width: 100px;
+    height: 100px;
 }
