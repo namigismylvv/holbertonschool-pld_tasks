@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Task 1 */
+.container-float{
+    border: 2px solid #333;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    float: left;
+
+}
