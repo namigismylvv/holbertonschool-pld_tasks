@@ -102,3 +102,32 @@ The `flex` property is a shorthand for setting three flex item properties at onc
 ```css
 flex: [flex-grow] [flex-shrink] [flex-basis];
 ```
+---
+
+## Task 6: Build a Flexbox Page
+
+### Question: How can you design a page layout with Flexbox in mind?
+
+To design a fully responsive webpage using Flexbox, follow these steps:
+
+1. **Structure the HTML semantically**  
+   - Use `<header>` for the top section, `<section>` for main content/cards, and `<footer>` for the bottom section.  
+   - Group related content in containers (`div`, `section`) as needed.
+
+2. **Make the main containers flex containers**  
+   - Apply `display: flex;` to parent elements that need flexible layouts.  
+   - Decide the direction with `flex-direction` (`row` for horizontal, `column` for vertical stacking).
+
+3. **Align and space items using Flexbox properties**  
+   - `justify-content` → controls alignment along the main axis.  
+   - `align-items` → controls alignment along the cross axis.  
+   - Use `gap` or `margin` for spacing between items.
+
+4. **Responsive adjustments**  
+   - Use media queries if needed to change `flex-direction` or sizing on smaller screens.  
+   - Flexbox naturally helps elements wrap (`flex-wrap: wrap;`) when space is limited.
+
+**Key Points:**  
+- Flexbox simplifies building layouts that adapt to different screen sizes.  
+- It allows vertical and horizontal alignment without extra markup or floats.  
+- Combining `flex` shorthand, `justify-content`, `align-items`, and `flex-wrap` creates a fully responsive page.
