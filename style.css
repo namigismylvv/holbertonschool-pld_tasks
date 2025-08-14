@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* Task 1 */
 /* Float based */
@@ -15,64 +15,78 @@
 
 } */
 /* Flexbox based */
-.container-flexbox{
-    display: flex;
-    border: 2px solid #333;
+.container-flexbox {
+  display: flex;
+  border: 2px solid #333;
 }
-.box{
-    width: 100px;
-    height: 100px;
+.box {
+  width: 100px;
+  height: 100px;
 }
 /* Task 2 */
-.header{
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    img{
-        width: 10%
-    }
+.header {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  img {
+    width: 10%;
+  }
 }
-.aligning-elements_section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.aligning-elements_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer{
-    display: flex;
-    justify-content: center;
+footer {
+  display: flex;
+  justify-content: center;
 }
 /* Task 3 */
-    .cards{
-        display: flex;
-        gap: 20px;
-        flex-direction: row;
-        justify-content: center;
-        .card{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 16rem;
-            border: 1px solid black;
-            img{
-                width: 100%;
-            }
-            p{
-                padding: 10px;
-            }
-        }
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16rem;
+    border: 1px solid black;
+    img {
+      width: 100%;
     }
-    /* Task 4 */
-    .nav-bar{
-        display: flex;
-        flex-direction: row;
-        padding:20px 0 20px ;
-        justify-content: space-around;
-        align-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.301);
-        background-color: aliceblue;
-        a{
-            text-decoration: none;
-            color: black;
-            flex-shrink: 0;
-        }
+    p {
+      padding: 10px;
     }
+  }
+}
+/* Task 4 */
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0 20px;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  background-color: aliceblue;
+  a {
+    text-decoration: none;
+    color: black;
+    flex-shrink: 0;
+  }
+}
+/* Task 5 */
+.pricing-table {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pricing-box {
+  flex: 1 1 200px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+}

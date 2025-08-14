@@ -85,3 +85,20 @@ In Flexbox, layout alignment is based on two axes:
 1. **flex-grow** – Defines how much an item can grow relative to the others.
 2. **flex-shrink** – Defines how much an item can shrink if needed.
 3. **align-self** – Overrides the container’s `align-items` for individual items, aligning them along the cross axis.
+
+---
+
+## Task 5: Flexbox Shorthands
+
+### Question: What are the shorthand properties for flex in CSS?
+
+The `flex` property is a shorthand for setting three flex item properties at once:
+
+1. **flex-grow** – Defines how much the item can grow relative to others.  
+2. **flex-shrink** – Defines how much the item can shrink if necessary.  
+3. **flex-basis** – Defines the initial size of the item before growing or shrinking.
+
+**Syntax:**  
+```css
+flex: [flex-grow] [flex-shrink] [flex-basis];
+```
