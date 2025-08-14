@@ -45,7 +45,7 @@ For perfect horizontal and vertical centering:
   justify-content: center; /* Horizontal alignment */
   align-items: center;     /* Vertical alignment */
 }
-
+```
 ---
 
 ## Task 3: Flex Axes and Properties
@@ -71,3 +71,17 @@ In Flexbox, layout alignment is based on two axes:
 - align-items aligns items along the **cross axis**  
 
 ---
+
+## Task 4: Flex Container vs. Flex Items
+
+### Question: What are the key properties that work on flex containers and flex items?
+
+**Flex Container Properties** (apply to the parent container):
+1. **display: flex;** – Activates Flexbox layout for the container.
+2. **flex-direction** – Sets the direction of the main axis (`row`, `column`, etc.).
+3. **justify-content** – Aligns flex items along the main axis (`flex-start`, `center`, `space-between`, etc.).
+
+**Flex Item Properties** (apply to the children of the flex container):
+1. **flex-grow** – Defines how much an item can grow relative to the others.
+2. **flex-shrink** – Defines how much an item can shrink if needed.
+3. **align-self** – Overrides the container’s `align-items` for individual items, aligning them along the cross axis.

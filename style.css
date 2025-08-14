@@ -61,3 +61,18 @@ footer{
             }
         }
     }
+    /* Task 4 */
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        padding:20px 0 20px ;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.301);
+        background-color: aliceblue;
+        a{
+            text-decoration: none;
+            color: black;
+            flex-shrink: 0;
+        }
+    }
