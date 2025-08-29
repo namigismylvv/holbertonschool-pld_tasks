@@ -1,0 +1,61 @@
+.features__div__cards {
+  @include flexbox(center, flex-start, row, 25px);
+  @include responsive(mobile) {
+    flex-direction: column;
+  }
+  .features__div__card {
+    @include flexbox(center, flex-start, column, $base_spacing);
+    width: 24rem;
+    @include responsive(mobile) {
+      width: 100%;
+    }
+    .features__div__card__img {
+      img {
+        border-radius: $br-radius;
+        max-width: 100%;
+      }
+    }
+    .features__div__card__body {
+      @include flexbox(flex-start, flex-start, column, 10px);
+      .features__div__card__body__title {
+        font-size: 19px;
+        letter-spacing: 3px;
+        text-align: start;
+        cursor: pointer;
+        &:hover {
+          color: $third-color;
+          transition: $transition;
+        }
+      }
+      P {
+        font-size: 17px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.testimonials__div__cards {
+  padding-top: 20px;
+  width: 100%;
+  @include flexbox(space-around, flex-start, row);
+  flex-wrap: wrap;
+  @include responsive(mobile) {
+    gap: 35px;
+  }
+  .testimonials__div__card {
+    @include flexbox(center, center, column, $base_spacing);
+    width: 20rem;
+    @include responsive(mobile) {
+      width: 100%;
+    }
+    p {
+      text-align: center;
+    }
+    img {
+      width: 110px;
+      border-radius: 50%;
+      border: 4px solid $third-color;
+    }
+  }
+}

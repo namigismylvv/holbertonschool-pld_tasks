@@ -1,0 +1,17 @@
+#features {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .features__div {
+    h3 {
+      font-size: $title-size;
+      padding-bottom: 40px;
+      letter-spacing: $letter-spacing;
+      @include responsive(mobile1) {
+        font-size: 30px;
+      }
+      @include responsive(mobile2) {
+        font-size: 20px;
+      }
+    }
+  }
+}

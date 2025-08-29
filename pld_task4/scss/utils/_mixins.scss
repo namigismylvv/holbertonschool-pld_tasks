@@ -1,0 +1,39 @@
+@mixin flexbox($justify, $align, $direction: row, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}
+@mixin bgImg(
+  $bgImg,
+  $bgSize: cover,
+  $bgRepeat: no-repeat,
+  $bgPosition: center
+) {
+  width: 100%;
+  background-image: $bgImg;
+  background-size: $bgSize;
+  background-repeat: $bgRepeat;
+  background-position: $bgPosition;
+}
+// Responsive
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 796px) {
+      @content;
+    }
+  } @else if $breakpoint == mobile1 {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == mobile2 {
+    @media only screen and (max-width: 500px) {
+      @content;
+    }
+  } @else if $breakpoint == mobile3 {
+    @media only screen and (max-width: 400px) {
+      @content;
+    }
+  }
+}

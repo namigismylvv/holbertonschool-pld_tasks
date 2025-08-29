@@ -2,12 +2,224 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pato</title>
+    <link rel="icon" href="images/restaurant.png" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="container">salam</div>
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="header__left">
+            <img src="images/logo.png" class="logo" alt="" />
+          </div>
+          <nav class="header__right">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#features">FEATURES</a></li>
+              <li><a href="#testimonials">TESTIMONIALS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="burger--menu">
+            <button class="burger-btn"></button>
+            <div class="offcanvas">
+              <button class="offcanvas__close">X</button>
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+              <div class="gallery">
+                <h4>GALLERY</h4>
+                <div class="gallery__images">
+                  <img src="images/photo-gallery-thumb-01.png" alt="" />
+                  <img src="images/photo-gallery-thumb-02.png" alt="" />
+                  <img src="images/photo-gallery-thumb-03.png" alt="" />
+                </div>
+                <div class="gallery__images">
+                  <img src="images/photo-gallery-thumb-05.png" alt="" />
+                  <img src="images/photo-gallery-thumb-06.png" alt="" />
+                  <img src="images/photo-gallery-thumb-07.png" alt="" />
+                </div>
+                <div class="gallery__images">
+                  <img src="images/photo-gallery-thumb-09.png" alt="" />
+                  <img src="images/photo-gallery-thumb-10.png" alt="" />
+                  <img src="images/photo-gallery-thumb-11.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero__div animate-on-scroll">
+          <i class="hero__div__italic">Welcome to</i>
+          <h2 class="hero__div__title">PATO PLACE</h2>
+          <a href="#contact" class="contact--scroll">CONTACT US</a>
+        </div>
+      </section>
+      <section id="features">
+        <div class="container">
+          <div class="features__div animate-on-scroll">
+            <h3>FEATURES</h3>
+            <div class="features__div__cards">
+              <div class="features__div__card">
+                <div class="features__div__card__img">
+                  <img src="images/intro-01.png" alt="" />
+                </div>
+                <div class="features__div__card__body">
+                  <h4 class="features__div__card__body__title">
+                    Romantic Restaurant
+                  </h4>
+                  <p>
+                    Phasellus lorem enim, luctus ut velit eget, con-vallis
+                    egestas eros.
+                  </p>
+                </div>
+              </div>
+              <div class="features__div__card">
+                <div class="features__div__card__img">
+                  <img src="images/intro-02.png" alt="" />
+                </div>
+                <div class="features__div__card__body">
+                  <h4 class="features__div__card__body__title">
+                    Delicious Food
+                  </h4>
+                  <p>
+                    Aliquam eget aliquam magna, quis posuere risus ac justo
+                    ipsum nibh urna
+                  </p>
+                </div>
+              </div>
+              <div class="features__div__card">
+                <div class="features__div__card__img">
+                  <img src="images/intro-04.png" alt="" />
+                </div>
+                <div class="features__div__card__body">
+                  <h4 class="features__div__card__body__title">
+                    Red Wines You Love
+                  </h4>
+                  <p>
+                    Sed ornare ligula eget tortor tempor, quis porta tellus
+                    dictum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="discover animate-on-scroll">
+        <i>Discover</i>
+        <h3>PATO PLACE</h3>
+      </div>
+      <section id="testimonials">
+        <div class="container">
+          <div class="testimonials__div animate-on-scroll">
+            <i>Customers Says</i>
+            <h3>REVIEW</h3>
+            <div class="testimonials__div__cards">
+              <div class="testimonials__div__card">
+                <img src="images/avatar-01.png" alt="" />
+                <p>
+                  “ We are lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Aenean tellus sem, mattis in pre-tium nec, fermentum
+                  viverra dui ”
+                </p>
+                <span> Marie Simmons ˗ New York </span>
+              </div>
+              <div class="testimonials__div__card">
+                <img src="images/avatar-02.png" alt="" />
+                <p>
+                  “ We are lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Aenean tellus sem, mattis in pre-tium nec, fermentum
+                  viverra dui ”
+                </p>
+                <span> Marie Simmons ˗ New York </span>
+              </div>
+              <div class="testimonials__div__card">
+                <img src="images/avatar-03.png" alt="" />
+                <p>
+                  “ We are lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Aenean tellus sem, mattis in pre-tium nec, fermentum
+                  viverra dui ”
+                </p>
+                <span> Marie Simmons ˗ New York </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact__div animate-on-scroll">
+          <div class="contact__div__left">
+            <i>Reservation</i>
+            <h3>CONTACT</h3>
+            <form action="#" data-validate>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Name"
+                name="name"
+                data-rules="required|min:3|max:30"
+                data-msgrequired="Name is required"
+                data-msgmin="Name must be at least 3 characters"
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                name="email"
+                data-rules="required|email"
+                data-msgrequired="Email is required"
+                data-msgemail="Invalid email format"
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                data-rules="required|min:10|max:500"
+                data-msgrequired="Message cannot be empty"
+                data-msgmin="Message must be at least 10 characters"
+                data-msgmax="Message cannot exceed 500 characters"
+              ></textarea>
+              <button type="submit" class="form--submit">Submit</button>
+            </form>
+          </div>
+          <div class="contact__div__right">
+            <img src="images/booking-01.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer animate-on-scroll">
+          <div class="footer__left">
+            <img src="images/logo.png" class="logo" alt="" />
+          </div>
+          <div class="footer__right">
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer--copyright">@COPYRIGHT 2025</p>
+      </div>
+    </footer>
+    <script src="vanilla.js"></script>
   </body>
 </html>

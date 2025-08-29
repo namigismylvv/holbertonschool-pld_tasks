@@ -1,0 +1,44 @@
+body {
+  position: relative;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $primary-font_stack;
+    text-transform: uppercase;
+    text-align: $text-center;
+  }
+  p,span{
+    color: $text-color;
+  }
+  i {
+    font-weight: bolder;
+    color: $third-color;
+    font-size: $italic-size;
+    @include responsive(mobile3){
+      font-size: 25px;
+    }
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    font-family: $primary-secondary_font;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $secondary-color;
+    &:hover {
+      color: $third-color;
+      transition: $transition;
+    }
+  }
+  button {
+    border: none;
+    cursor: pointer;
+    &:hover{
+      transition: $transition;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+header {
+  width: 100%;
+  border-top: 5px solid $third-color;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  .header {
+    @include flexbox(space-between, center);
+    .header__right {
+      @include responsive(mobile){
+        display: none
+      }
+      ul {
+        @include flexbox(center, center, row, $base-spacing);
+      }
+    }
+  }
+}

@@ -1,7 +1,15 @@
- $text-color:blue;
-body{
-    .container{
-        color:$text-color;
-    }
-
-}
+$primary-color:#212529;
+$secondary-color:#FFFFFF;
+$third-color:#EC1D25;
+$text-color:#666666;
+$bg-color:#111111;
+$primary-font_stack:"Arial, Helvetica, sans-serif";
+$primary-secondary_font:"Courier New', Courier, monospace";
+$base-spacing:20px;
+$text-center:center;
+$border:2px solid $secondary-color;
+$br-radius:10px;
+$transition:0.5s;
+$letter-spacing:10px;
+$title-size:40px;
+$italic-size:30px;

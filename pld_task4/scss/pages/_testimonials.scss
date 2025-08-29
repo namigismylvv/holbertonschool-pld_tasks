@@ -1,0 +1,13 @@
+#testimonials {
+    padding-bottom: 80px;
+  .testimonials__div{
+    @include flexbox(center,center,column,20px);
+  }
+  h3{
+    font-size: $title-size;
+    letter-spacing: $letter-spacing;
+    @include responsive(mobile3){
+        font-size: 27px;
+    }
+  }
+}

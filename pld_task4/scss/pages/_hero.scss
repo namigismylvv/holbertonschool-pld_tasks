@@ -1,0 +1,32 @@
+#hero {
+  @include bgImg(url("../images/hero_background.png"));
+  @include flexbox(center, center);
+  height: 100vh;
+  .hero__div {
+    @include flexbox(center, center, column, $base-spacing);
+    .hero__div__italic {
+      color: $secondary-color;
+      font-size: 60px;
+      @include responsive(mobile) {
+        font-size: 50px;
+      }
+      @include responsive(mobile2) {
+        font-size: 30px;
+      }
+    }
+    .hero__div__title {
+      font-size: 90px;
+      color: $secondary-color;
+      letter-spacing: $letter-spacing;
+      @include responsive(mobile) {
+        font-size: 60px;
+      }
+      @include responsive(mobile2) {
+        font-size: 40px;
+      }
+      @include responsive(mobile3) {
+        font-size: 30px;
+      }
+    }
+  }
+}

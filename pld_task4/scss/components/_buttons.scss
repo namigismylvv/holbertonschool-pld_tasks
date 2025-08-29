@@ -1,0 +1,25 @@
+.contact--scroll {
+  background-color: $secondary-color;
+  color: $third-color;
+  padding: 10px 15px;
+  border-radius: $br-radius;
+  font-size: 14px;
+  font-weight: bolder;
+  &:hover {
+    background-color: $third-color;
+    color: $secondary-color;
+  }
+  @include responsive(mobile3) {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+}
+.form--submit {
+  border-radius: $br-radius;
+  padding: 10px 25px;
+  background-color: $primary-color;
+  color: $secondary-color;
+  &:hover {
+    background-color: $third-color;
+  }
+}

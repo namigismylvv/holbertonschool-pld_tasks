@@ -1,0 +1,34 @@
+#contact {
+  background-color: #eeeeee;
+  @include flexbox(center, center);
+  padding: 80px 0 80px;
+  .contact__div {
+    width: 1000px;
+    @include flexbox(space-evenly, center, row);
+    @include responsive(mobile) {
+      flex-direction: column;
+      gap: 50px;
+      padding: 20px;
+    }
+    .contact__div__left {
+      @include flexbox(center, center, column);
+      width: 35%;
+      @include responsive(mobile) {
+        width: 100%;
+      }
+      h3 {
+        font-size: $title-size;
+        letter-spacing: $letter-spacing;
+        @include responsive(mobile3) {
+          font-size: 30px;
+        }
+      }
+    }
+    .contact__div__right {
+      max-width: 390px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

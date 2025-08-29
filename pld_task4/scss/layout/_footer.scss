@@ -1,0 +1,31 @@
+footer {
+  width: 100%;
+  background-color: $bg-color;
+  .footer {
+    @include flexbox(space-between, center);
+    @include responsive(mobile) {
+      flex-direction: column;
+      gap: 25px;
+    }
+    .footer__right {
+      ul {
+        @include flexbox(center, center, row, $base-spacing);
+        li {
+          a {
+            @include responsive(mobile3) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer--copyright {
+    margin-top: 1rem;
+    color: $secondary-color;
+    text-align: $text-center;
+    @include responsive(mobile3) {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+form {
+  @include flexbox(center, flex-start, column, 15px);
+  width: 100%;
+  padding-top: 30px;
+  input,
+  textarea {
+    padding: 15px 15px;
+    border-radius: $br-radius;
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0px 2px #ec1d25;
+    }
+  }
+  .is-invalid {
+    outline: 2px solid red;
+  }
+  .field-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+}

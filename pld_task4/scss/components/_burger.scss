@@ -1,0 +1,96 @@
+header {
+  .header {
+    .burger--menu {
+      .burger-btn {
+        width: 26px;
+        height: 15px;
+        border-top: $border;
+        border-bottom: $border;
+        background: none;
+        &:hover {
+          border-top: 2px solid $third-color;
+          border-bottom: 2px solid $third-color;
+        }
+      }
+      .offcanvas {
+        position: fixed;
+        top: 0;
+        right: -350px;
+        width: 350px;
+        height: 100%;
+        padding: 40px 20px;
+        background: $secondary-color;
+        transition: $transition ease;
+        z-index: 1001;
+        .offcanvas__close {
+          font-size: 30px;
+          background: none;
+          align-self: flex-end;
+          &:hover {
+            color: $third-color;
+          }
+        }
+        @include flexbox(flex-start, center, column, 4rem);
+        ul {
+          list-style: none;
+          padding: 0;
+          @include flexbox(center, center, column, $base-spacing);
+
+          li {
+            a {
+              color: $text-color;
+              text-decoration: none;
+              font-size: 20px;
+
+              &:hover {
+                color: $third-color;
+              }
+            }
+          }
+        }
+
+        &.active {
+          right: 0;
+        }
+        .gallery {
+          h4 {
+            font-size: 18px;
+            letter-spacing: 4px;
+            margin-bottom: 2rem;
+          }
+          .gallery__images {
+            @include flexbox(center, center, row, 10px);
+            width: 90px;
+            margin: 10px auto;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        @include responsive(mobile1) {
+          width: 400px;
+          right: -400px;
+        }
+        @include responsive(mobile2) {
+          width: 100%;
+          right: -100%;
+        }
+      }
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 1000;
+
+        &.active {
+          display: block;
+        }
+      }
+      display: none;
+      @include responsive(mobile) {
+        display: block;
+      }
+    }
+  }
+}
