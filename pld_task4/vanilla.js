@@ -189,32 +189,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     elements.forEach(el => observer.observe(el));
 });
-// Testimonial slider
-const cardsContainer = document.querySelector(".testimonials__div__cards");
-const cards = document.querySelectorAll(".testimonials__div__testimonial__card");
-const total = cards.length;
-
-let index = 0;
-
-document.getElementById("prev").addEventListener("click", () => {
-  index = (index - 1 + total) % total;
-  updateSlider();
-});
-
-document.getElementById("next").addEventListener("click", () => {
-  index = (index + 1) % total;
-  updateSlider();
-});
-
-// auto-rotate
-setInterval(() => {
-  index = (index + 1) % total;
-  updateSlider();
-}, 10000); 
-
-function updateSlider() {
-  cardsContainer.style.transform = `translateX(-${index * 100}%)`;
-}
 
 
 
