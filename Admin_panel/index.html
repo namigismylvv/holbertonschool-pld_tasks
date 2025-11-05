@@ -8,50 +8,45 @@
   </head>
   <body>
     <aside>
+      <input type="checkbox" id="asideToggle" />
+      <label for="asideToggle" class="toggle-btn">☰</label>
       <div class="aside">
         <div class="aside__header">
           <div class="aside__logo">
-            <img src="" alt="logo" />
-            <img src="" alt="" />
+            <img src="img/logo.png" alt="logo" />
+            <img class="dashboard" src="img/Dashboard.png" alt="" />
+            <span>v.01</span>
           </div>
           <nav class="aside__nav">
             <ul>
-              <li><a href="#"> </a></li>
               <li>
-                <a href="#">
-                  <img src="" alt="dashboard" />
-                  Dashboard
-                </a>
+                <img src="img/key-square.png" alt="dashboard" />
+                <span>Dashboard</span>
               </li>
               <li>
-                <a href="#">
-                  <img src="" alt="product" />
-                  Product
-                </a>
+                <img src="img/3d-square.png" alt="product" />
+                <span>Product</span>
+                <img src="img/chevron-right.png" alt="" />
               </li>
               <li>
-                <a href="#">
-                  <img src="" alt="customers" />
-                  Customers
-                </a>
+                <img src="img/user-square.png" alt="customers" />
+                <span>Customers</span>
+                <img src="img/chevron-right.png" alt="" />
               </li>
               <li>
-                <a href="#">
-                  <img src="" alt="income" />
-                  Income
-                </a>
+                <img src="img/wallet-money.png" alt="income" />
+                <span>Income</span>
+                <img src="img/chevron-right.png" alt="" />
               </li>
               <li>
-                <a href="#">
-                  <img src="" alt="promote" />
-                  Promote
-                </a>
+                <img src="img/discount-shape.png" alt="promote" />
+                <span>Promote</span>
+                <img src="img/chevron-right.png" alt="" />
               </li>
               <li>
-                <a href="">
-                  <img src="" alt="help" />
-                  Help
-                </a>
+                <img src="img/message-question.png" alt="help" />
+                <span>Help</span>
+                <img src="img/chevron-right.png" alt="" />
               </li>
             </ul>
           </nav>
@@ -140,12 +135,109 @@
               <h3>All Customers</h3>
               <p>Active Members</p>
             </div>
-            
+            <div class="customers__filter">
+              <img src="img/search.png" alt="" />
+              <input type="text" />
+              <label for="">Short By:</label>
+              <select name="filter" id="filter">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+              </select>
+            </div>
           </div>
-          <table>
-            <thead></thead>
-            <tbody></tbody>
+          <table class="customer__table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td><button>Active</button></td>
+              </tr>
+              <tr>
+                <td>Floyd Miles</td>
+                <td>Yahoo</td>
+                <td>(225) 555-0118</td>
+                <td>floyd@yahoo.com</td>
+                <td>Kiribati</td>
+                <td><button>Inactive</button></td>
+              </tr>
+              <tr>
+                <td>Ronald Richards</td>
+                <td>Adobe</td>
+                <td>(302) 555-0107</td>
+                <td>ronald@adobe.com</td>
+                <td>Israel</td>
+                <td><button>Inactive</button></td>
+              </tr>
+              <tr>
+                <td>Marvin McKinney</td>
+                <td>Tesla</td>
+                <td>(252) 555-0126</td>
+                <td>marvin@tesla.com</td>
+                <td>Iran</td>
+                <td><button>Active</button></td>
+              </tr>
+              <tr>
+                <td>Jerome Bell</td>
+                <td>Google</td>
+                <td>(629) 555-0129</td>
+                <td>jerome@google.com</td>
+                <td>Réunion</td>
+                <td><button>Active</button></td>
+              </tr>
+              <tr>
+                <td>Kathryn Murphy</td>
+                <td>Microsoft</td>
+                <td>(406) 555-0120</td>
+                <td>kathryn@microsoft.com</td>
+                <td>Curaçao</td>
+                <td><button>Active</button></td>
+              </tr>
+              <tr>
+                <td>Jacob Jones</td>
+                <td>Yahoo</td>
+                <td>(208) 555-0112</td>
+                <td>jacob@yahoo.com</td>
+                <td>Brazil</td>
+                <td><button>Active</button></td>
+              </tr>
+              <tr>
+                <td>Kristin Watson</td>
+                <td>Facebook</td>
+                <td>(704) 555-0127</td>
+                <td>kristin@facebook.com</td>
+                <td>Åland Islands</td>
+                <td><button>Inactive</button></td>
+              </tr>
+            </tbody>
           </table>
+          <div class="customer__foot">
+            <div class="customer__text">
+              <p>Showing data 1 to 8 of 256K entries</p>
+            </div>
+            <div class="customer__pagination">
+              <button><img src="img/chevron-left.png" alt="" /></button>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+              <span>...</span>
+              <button>40</button>
+              <button><img src="img/chevron-right2.png" alt="" /></button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
