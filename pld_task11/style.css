@@ -42,6 +42,9 @@ body {
     color: #ffffffb6;
     line-height: 30px;
   }
+  input[type="Text"] {
+    border-radius: 10px;
+  }
 }
 header {
   .header {
@@ -160,7 +163,7 @@ header {
 }
 main {
   #hosting {
-    padding-top: 60px;
+    padding: 60px 0 90px;
     .hosting {
       display: flex;
       justify-content: space-between;
@@ -206,6 +209,82 @@ main {
           #480689 79%
         );
         border-radius: 50%;
+      }
+    }
+  }
+  #domain {
+    background-color: #28304e;
+    .domain {
+      padding: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      .domain__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 509px;
+        h2 {
+          font-weight: 600;
+          font-size: 32px;
+          color: #ffffff;
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 26px;
+          color: #ffffffb6;
+        }
+      }
+      .domain__search {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        form {
+          width: 100%;
+          position: relative;
+          input {
+            width: 100%;
+            padding: 20px 25px;
+            border-radius: 50px;
+          }
+          select {
+            position: absolute;
+            top: 20px;
+            right: 145px;
+            font-size: 15px;
+            background-color: white;
+            border: none;
+          }
+          .button--linear {
+            position: absolute;
+            top: 7px;
+            right: 10px;
+            padding: 15px 40px;
+          }
+        }
+        .domain__months {
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          .domain__per-month {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p {
+              font-weight: 400;
+              font-size: 18px;
+              color: rgba(255, 255, 255, 0.756);
+            }
+            span {
+              font-weight: 400;
+              font-size: 14px;
+              color: rgba(255, 255, 255, 0.366);
+            }
+          }
+        }
       }
     }
   }
