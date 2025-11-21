@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  #form {
+    .form {
+      display: flex;
+      .form__info {
+        width: 50%;
+      }
+
+      .form__img {
+        background-image: url("img/bg-img.jpg");
+        border-bottom-left-radius: 45px;
+        border-top-left-radius: 45px;
+        width: 50%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;        
+        
+      }
+    }
+  }
+}

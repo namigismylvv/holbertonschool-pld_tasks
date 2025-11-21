@@ -591,14 +591,15 @@ main {
               }
               th,
               td {
-                padding-right:120px;
+                padding-right: 120px;
               }
-              th+th+th+th+th,td+td+td+td+td{
+              th + th + th + th + th,
+              td + td + td + td + td {
                 padding-left: 80px;
                 padding-right: 0;
               }
-              
-              .btn--header{
+
+              .btn--header {
                 padding-right: 0;
               }
             }
